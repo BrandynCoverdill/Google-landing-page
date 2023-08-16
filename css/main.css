@@ -1,0 +1,429 @@
+/* General Styling
+================================================= */
+
+* {
+    margin: 0;
+}
+
+html {
+    /* background-color: #202124; */
+    font-size: 12px;
+    font-family: Roboto, Helvetica, Neue, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #202124;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #202124;
+}
+
+footer {
+    background: #171717;
+    margin-top: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* Header
+================================================= */
+
+/* navbar */
+
+nav {
+    justify-content: space-between;
+}
+
+nav a {
+    color: #9aa0a6;
+    text-decoration: none;
+    padding: 0px 8px;
+    margin: 2px 0;
+    font-weight: bold;
+}
+
+nav span {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #9aa0a6;
+    cursor: pointer;
+}
+
+.nav-left {
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.nav-left span:nth-child(2) {
+    width: 10px;
+    border-bottom: 2px solid #8ab4f8;
+    cursor: default;
+}
+
+.nav-left span p:first-of-type {
+    color: #8ab4f8;
+    cursor: default;
+}
+
+.nav-left a:nth-child(3) {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-right {
+    align-items: center;
+    margin: 0 8px;
+}
+
+.nav-right span {
+    color: #ffffff;
+}
+
+.nav-right button {
+    padding: 9px 15px;
+    border: 1px solid transparent;
+    background: #8ab4f8;
+    border-radius: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .25px;
+    min-width: 80px;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #202124;
+}
+
+.nav-right button:hover {
+    background: #93baf9;
+}
+
+
+/* Main
+================================================= */
+
+/* google Logo */
+
+.google-logo {
+    text-align: center;
+    margin: 36px auto 25px auto;
+    width: 160px;
+}
+
+.google-logo img {
+    min-width: 160px;
+    height: 58px;
+}
+
+/* search bar */
+
+.search {
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.search-bar {
+    max-width: 675px;
+    margin: 0 auto;
+    border: 1px solid #70757a;
+    border-radius: 30px;
+    height: 40px;
+    padding: 0 15px;
+    align-items: center;
+    position: relative;
+}
+
+.search form {
+    width: 100%;
+}
+
+#searchBar {
+    background: transparent;
+    border: none;
+    color: #bdc1c6;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    width: 96%;
+    padding: 4px 0;
+}
+
+.icon {
+    height: 21px;
+}
+
+.magnifying-glass {
+    height: 18px;
+    margin-right: 15px;
+}
+
+.microphone {
+    cursor: pointer;
+    margin-right: 35px;
+    margin-left: 10px;
+}
+
+.capture {
+    height: 19px;
+    cursor: pointer;
+}
+
+/* trending Searches */
+
+.trending {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.trending > div p {
+    color: #e8eaed;
+    margin-left: 8px;
+    font-size: 1.75em;
+}
+
+.trending > div {
+    justify-content: space-between;
+}
+
+.trending-settings-icon {
+    color: #bdc1c6;
+    cursor: pointer
+}
+
+.trending-settings-links {
+    position: absolute;
+    right: 10px;
+    top: 255px;
+    box-shadow: 0 3px 5px black;
+    height: 157px;
+    width: 155px;
+    padding: 5px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #202124;
+    overflow: hidden;
+}
+
+.trending-settings-links a:hover {
+    background: #3c4043
+}
+
+.trending-settings-links a:nth-child(3) {
+    padding-left: 10px;
+}
+
+.trending-settings-links a span {
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+.trending-settings-links a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    overflow-x: hidden;
+    font-size: 14px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.trending-settings-links a p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.trending-searches {
+    padding: 20px 0;
+}
+
+.trending-searches a {
+    text-decoration: none;
+}
+
+.trending-search {
+    padding: 10px 0;
+    gap: 20px;
+    border-bottom: 1px solid #70757a;
+    cursor: pointer;
+}
+
+.trending-search-text > p:nth-child(1) {
+    color: #e8eaed;
+    font-size: 16px;
+}
+
+.trending-search-text > p:nth-child(2) {
+    color: #9aa0a6;
+    font-size: 14px;
+}
+
+.trending-search span {
+    color: #bdc1c6;
+    font-size: 20px;
+    margin: auto 0;
+    margin-left: 12px;
+}
+
+/* Side menu */
+
+.side-menu {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #202124;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border: none;
+}
+
+.side-menu a:nth-child(1):focus-visible {
+    outline: none;
+}
+
+dialog::backdrop {
+    opacity: .1;
+}
+
+.side-menu img {
+    height: 32px;
+    width: 92px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.side-menu-links {
+    flex-direction: column;
+    flex-grow: auto;
+}
+
+.side-menu-links a {
+    cursor: pointer;
+}
+
+.side-menu a {
+    color: #bdc1c6;
+    font-size: 16px;
+    text-decoration: none;
+    gap: 10px;
+    align-items: center;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.side-menu a:nth-child(1) {
+    padding-top: 0;
+}
+
+.side-menu a:nth-child(3) {
+    border-bottom: 1px solid #3c4043;
+    padding-bottom: 20px;
+}
+
+.side-menu a:nth-child(4) {
+    padding-top: 20px;
+}
+
+.side-menu-links a span {
+    padding-left: 20px;
+}
+
+/* Footer
+================================================= */
+
+/* blank space */
+
+.blank-space {
+    height: 45px;
+    border-top:1px solid #3c4043;
+    border-bottom: 1px solid #3c4043;
+    content: "";
+}
+
+/* footer links */
+
+.bottom-links {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bottom-links div a {
+    color: #999da2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dark-mode-link {
+    white-space: nowrap;
+}
+
+.bottom-links div p {
+    color: #999da2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bottom-links div:nth-child(1) {
+    gap: 30px;
+}
+
+.bottom-links div:nth-child(2) {
+    margin-bottom: 15px;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.bottom-links div:nth-child(3) {
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+/* settings link */
+
+.settings-div {
+    position: relative;
+}
+
+.settings-menu {
+    flex-direction: column;
+    box-shadow: 0px 3px 5px #111111;
+    width: 155px;
+    background: #202124;
+    padding: 5px 0px;
+    position: absolute;
+    top: -350px;
+    left: -20px;
+    border: none;
+}
+
+.active {
+    display: none;
+}
+
+.settings-menu a {
+    text-decoration: none;
+    color: #bdc1c6;
+    padding: 20px 15px;
+    font-size: 13px;
+}
+
+.settings-menu a:hover {
+    background: #3c4043
+}
